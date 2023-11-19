@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameInfo">
+        <p>Najbolje vrijeme: <span id="infoBestTime"></span></p>
+        <p>Posljednje vrijeme: <span id="infoCurrentTime"></span></p>
+        <hr>
+        <div id="level">
+        <p>Odabir željenog levela:</p>
+           <input type="radio" id="easy" name="difficulty" value="easy">
+           <label for="easy">Lako</label>
+           <input type="radio" id="medium" name="difficulty" value="medium" checked>
+           <label for="medium">Srednje teško</label>
+           <input type="radio" id="hard" name="difficulty" value="hard">
+           <label for="hard">Teško</label>
+        </div>
+        <button id="restartButton">Nastavi</button>
+    </div>
+    <div id="timer">
+        <p>Najbolje vrijeme: <span id="timerBestTime">00:00.000</span></p>
+        <p>Vrijeme: <span id="timerCurrentTime">00:00.000</span></p>
+    </div>
+    <canvas id="canvas"></canvas>
+    <img id="asteroidImg" src="asteroid.png" style="display: none;">
+    <img id="spaceshipImg" src="nlo.png" style="display: none;">
+  <script src="script.js"></script>
+</body>
+</html>
